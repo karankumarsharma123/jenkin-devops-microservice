@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.in28minutes.microservices.currencyexchangeservice.resource.CurrencyExchangeControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.096 s <<< FAILURE! - in com.in28minutes.microservices.currencyexchangeservice.resource.CurrencyExchangeControllerTest
+imHealthy(com.in28minutes.microservices.currencyexchangeservice.resource.CurrencyExchangeControllerTest)  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class groovy.lang.GroovySystem
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.reflection.ReflectionCache [in thread "main"]
+
+retrieveExchangeValue(com.in28minutes.microservices.currencyexchangeservice.resource.CurrencyExchangeControllerTest)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class groovy.lang.GroovySystem
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.reflection.ReflectionCache [in thread "main"]
+

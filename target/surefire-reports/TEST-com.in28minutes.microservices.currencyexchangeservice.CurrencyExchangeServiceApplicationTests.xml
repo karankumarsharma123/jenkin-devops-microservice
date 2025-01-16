@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests" time="0.741" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/ksharma/Library/CloudStorage/OneDrive-GoToTechnologiesUSALLC/Documents/devops-master-class/jenkins/currency-exchange-microservice/target/test-classes:/Users/ksharma/Library/CloudStorage/OneDrive-GoToTechnologiesUSALLC/Documents/devops-master-class/jenkins/currency-exchange-microservice/target/classes:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.1.1.RELEASE/spring-boot-starter-web-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-starter/2.1.1.RELEASE/spring-boot-starter-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.1.1.RELEASE/spring-boot-starter-logging-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/ksharma/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/ksharma/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.11.1/log4j-to-slf4j-2.11.1.jar:/Users/ksharma/.m2/repository/org/apache/logging/log4j/log4j-api/2.11.1/log4j-api-2.11.1.jar:/Users/ksharma/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar:/Users/ksharma/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/Users/ksharma/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.1.1.RELEASE/spring-boot-starter-json-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7.jar:/Users/ksharma/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/Users/ksharma/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.7/jackson-core-2.9.7.jar:/Users/ksharma/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.7/jackson-datatype-jdk8-2.9.7.jar:/Users/ksharma/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.7/jackson-datatype-jsr310-2.9.7.jar:/Users/ksharma/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.1.1.RELEASE/spring-boot-starter-tomcat-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.13/tomcat-embed-core-9.0.13.jar:/Users/ksharma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.13/tomcat-embed-el-9.0.13.jar:/Users/ksharma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.13/tomcat-embed-websocket-9.0.13.jar:/Users/ksharma/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.jar:/Users/ksharma/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar:/Users/ksharma/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/ksharma/.m2/repository/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar:/Users/ksharma/.m2/repository/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/spring-aop/5.1.3.RELEASE/spring-aop-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/spring-expression/5.1.3.RELEASE/spring-expression-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.1.1.RELEASE/spring-boot-starter-data-jpa-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.1.1.RELEASE/spring-boot-starter-aop-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/org/aspectj/aspectjweaver/1.9.2/aspectjweaver-1.9.2.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.1.1.RELEASE/spring-boot-starter-jdbc-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0.jar:/Users/ksharma/.m2/repository/org/springframework/spring-jdbc/5.1.3.RELEASE/spring-jdbc-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/javax/transaction/javax.transaction-api/1.3/javax.transaction-api-1.3.jar:/Users/ksharma/.m2/repository/org/hibernate/hibernate-core/5.3.7.Final/hibernate-core-5.3.7.Final.jar:/Users/ksharma/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/ksharma/.m2/repository/org/javassist/javassist/3.23.1-GA/javassist-3.23.1-GA.jar:/Users/ksharma/.m2/repository/net/bytebuddy/byte-buddy/1.9.5/byte-buddy-1.9.5.jar:/Users/ksharma/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/ksharma/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/Users/ksharma/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/Users/ksharma/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.0.4.Final/hibernate-commons-annotations-5.0.4.Final.jar:/Users/ksharma/.m2/repository/org/springframework/data/spring-data-jpa/2.1.3.RELEASE/spring-data-jpa-2.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/data/spring-data-commons/2.1.3.RELEASE/spring-data-commons-2.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/spring-orm/5.1.3.RELEASE/spring-orm-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/spring-tx/5.1.3.RELEASE/spring-tx-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/ksharma/.m2/repository/org/springframework/spring-aspects/5.1.3.RELEASE/spring-aspects-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-devtools/2.1.1.RELEASE/spring-boot-devtools-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot/2.1.1.RELEASE/spring-boot-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.1.RELEASE/spring-boot-autoconfigure-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/com/h2database/h2/1.4.197/h2-1.4.197.jar:/Users/ksharma/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/ksharma/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/ksharma/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-impl-2.3.1.jar:/Users/ksharma/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/ksharma/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/ksharma/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/ksharma/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/ksharma/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/ksharma/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.1.1.RELEASE/spring-boot-starter-test-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-test/2.1.1.RELEASE/spring-boot-test-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.1.1.RELEASE/spring-boot-test-autoconfigure-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/Users/ksharma/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/ksharma/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/ksharma/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/ksharma/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/ksharma/.m2/repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar:/Users/ksharma/.m2/repository/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.jar:/Users/ksharma/.m2/repository/net/bytebuddy/byte-buddy-agent/1.9.5/byte-buddy-agent-1.9.5.jar:/Users/ksharma/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/Users/ksharma/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/ksharma/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/Users/ksharma/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/Users/ksharma/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/ksharma/.m2/repository/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/spring-jcl/5.1.3.RELEASE/spring-jcl-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/spring-test/5.1.3.RELEASE/spring-test-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/xmlunit/xmlunit-core/2.6.2/xmlunit-core-2.6.2.jar:/Users/ksharma/.m2/repository/io/rest-assured/rest-assured-all/4.0.0/rest-assured-all-4.0.0.jar:/Users/ksharma/.m2/repository/org/codehaus/groovy/groovy/2.5.4/groovy-2.5.4.jar:/Users/ksharma/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/ksharma/.m2/repository/org/codehaus/groovy/groovy-xml/2.5.4/groovy-xml-2.5.4.jar:/Users/ksharma/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/ksharma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-osgi-2.2.10.jar:/Users/ksharma/.m2/repository/org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar:/Users/ksharma/.m2/repository/org/codehaus/groovy/groovy-json/2.5.4/groovy-json-2.5.4.jar:/Users/ksharma/.m2/repository/io/cucumber/cucumber-spring/4.2.0/cucumber-spring-4.2.0.jar:/Users/ksharma/.m2/repository/io/cucumber/cucumber-java/2.3.1/cucumber-java-2.3.1.jar:/Users/ksharma/.m2/repository/io/cucumber/cucumber-core/2.3.1/cucumber-core-2.3.1.jar:/Users/ksharma/.m2/repository/info/cukes/cucumber-html/0.2.6/cucumber-html-0.2.6.jar:/Users/ksharma/.m2/repository/io/cucumber/cucumber-jvm-deps/1.0.6/cucumber-jvm-deps-1.0.6.jar:/Users/ksharma/.m2/repository/io/cucumber/gherkin/5.0.0/gherkin-5.0.0.jar:/Users/ksharma/.m2/repository/io/cucumber/tag-expressions/1.1.1/tag-expressions-1.1.1.jar:/Users/ksharma/.m2/repository/io/cucumber/cucumber-junit/2.3.1/cucumber-junit-2.3.1.jar:/Users/ksharma/.m2/repository/org/jacoco/org.jacoco.agent/0.8.3/org.jacoco.agent-0.8.3-runtime.jar:/Users/ksharma/.m2/repository/org/sonarsource/java/sonar-jacoco-listeners/5.10.2.17019/sonar-jacoco-listeners-5.10.2.17019.jar:/Users/ksharma/.m2/repository/org/springframework/security/spring-security-test/5.1.2.RELEASE/spring-security-test-5.1.2.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/security/spring-security-core/5.1.2.RELEASE/spring-security-core-5.1.2.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/security/spring-security-web/5.1.2.RELEASE/spring-security-web-5.1.2.RELEASE.jar:/Users/ksharma/.m2/repository/io/rest-assured/rest-assured/4.1.2/rest-assured-4.1.2.jar:/Users/ksharma/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/Users/ksharma/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/Users/ksharma/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/ksharma/.m2/repository/org/apache/httpcomponents/httpmime/4.5.6/httpmime-4.5.6.jar:/Users/ksharma/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/ksharma/.m2/repository/io/rest-assured/json-path/3.1.1/json-path-3.1.1.jar:/Users/ksharma/.m2/repository/io/rest-assured/rest-assured-common/3.1.1/rest-assured-common-3.1.1.jar:/Users/ksharma/.m2/repository/io/rest-assured/xml-path/3.1.1/xml-path-3.1.1.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/Users/ksharma/Library/Java/JavaVirtualMachines/corretto-17.0.12/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/ksharma/Library/CloudStorage/OneDrive-GoToTechnologiesUSALLC/Documents/devops-master-class/jenkins/currency-exchange-microservice/target/surefire/surefirebooter10996965806652103594.jar /Users/ksharma/Library/CloudStorage/OneDrive-GoToTechnologiesUSALLC/Documents/devops-master-class/jenkins/currency-exchange-microservice/target/surefire 2025-01-15T22-50-12_834-jvmRun1 surefire15752754983688056680tmp surefire_08215614114950616950tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/ksharma/Library/CloudStorage/OneDrive-GoToTechnologiesUSALLC/Documents/devops-master-class/jenkins/currency-exchange-microservice/target/test-classes:/Users/ksharma/Library/CloudStorage/OneDrive-GoToTechnologiesUSALLC/Documents/devops-master-class/jenkins/currency-exchange-microservice/target/classes:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.1.1.RELEASE/spring-boot-starter-web-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-starter/2.1.1.RELEASE/spring-boot-starter-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.1.1.RELEASE/spring-boot-starter-logging-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/ksharma/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/ksharma/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.11.1/log4j-to-slf4j-2.11.1.jar:/Users/ksharma/.m2/repository/org/apache/logging/log4j/log4j-api/2.11.1/log4j-api-2.11.1.jar:/Users/ksharma/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar:/Users/ksharma/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/Users/ksharma/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.1.1.RELEASE/spring-boot-starter-json-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7.jar:/Users/ksharma/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/Users/ksharma/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.7/jackson-core-2.9.7.jar:/Users/ksharma/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.7/jackson-datatype-jdk8-2.9.7.jar:/Users/ksharma/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.7/jackson-datatype-jsr310-2.9.7.jar:/Users/ksharma/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.1.1.RELEASE/spring-boot-starter-tomcat-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.13/tomcat-embed-core-9.0.13.jar:/Users/ksharma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.13/tomcat-embed-el-9.0.13.jar:/Users/ksharma/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.13/tomcat-embed-websocket-9.0.13.jar:/Users/ksharma/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.jar:/Users/ksharma/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar:/Users/ksharma/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/ksharma/.m2/repository/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar:/Users/ksharma/.m2/repository/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/spring-aop/5.1.3.RELEASE/spring-aop-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/spring-expression/5.1.3.RELEASE/spring-expression-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.1.1.RELEASE/spring-boot-starter-data-jpa-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.1.1.RELEASE/spring-boot-starter-aop-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/org/aspectj/aspectjweaver/1.9.2/aspectjweaver-1.9.2.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.1.1.RELEASE/spring-boot-starter-jdbc-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0.jar:/Users/ksharma/.m2/repository/org/springframework/spring-jdbc/5.1.3.RELEASE/spring-jdbc-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/javax/transaction/javax.transaction-api/1.3/javax.transaction-api-1.3.jar:/Users/ksharma/.m2/repository/org/hibernate/hibernate-core/5.3.7.Final/hibernate-core-5.3.7.Final.jar:/Users/ksharma/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/ksharma/.m2/repository/org/javassist/javassist/3.23.1-GA/javassist-3.23.1-GA.jar:/Users/ksharma/.m2/repository/net/bytebuddy/byte-buddy/1.9.5/byte-buddy-1.9.5.jar:/Users/ksharma/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/ksharma/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/Users/ksharma/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/Users/ksharma/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.0.4.Final/hibernate-commons-annotations-5.0.4.Final.jar:/Users/ksharma/.m2/repository/org/springframework/data/spring-data-jpa/2.1.3.RELEASE/spring-data-jpa-2.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/data/spring-data-commons/2.1.3.RELEASE/spring-data-commons-2.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/spring-orm/5.1.3.RELEASE/spring-orm-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/spring-tx/5.1.3.RELEASE/spring-tx-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/ksharma/.m2/repository/org/springframework/spring-aspects/5.1.3.RELEASE/spring-aspects-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-devtools/2.1.1.RELEASE/spring-boot-devtools-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot/2.1.1.RELEASE/spring-boot-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.1.RELEASE/spring-boot-autoconfigure-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/com/h2database/h2/1.4.197/h2-1.4.197.jar:/Users/ksharma/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/ksharma/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/ksharma/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-impl-2.3.1.jar:/Users/ksharma/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/ksharma/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/ksharma/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/ksharma/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/ksharma/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/ksharma/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.1.1.RELEASE/spring-boot-starter-test-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-test/2.1.1.RELEASE/spring-boot-test-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.1.1.RELEASE/spring-boot-test-autoconfigure-2.1.1.RELEASE.jar:/Users/ksharma/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/Users/ksharma/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/ksharma/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/ksharma/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/ksharma/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/ksharma/.m2/repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar:/Users/ksharma/.m2/repository/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.jar:/Users/ksharma/.m2/repository/net/bytebuddy/byte-buddy-agent/1.9.5/byte-buddy-agent-1.9.5.jar:/Users/ksharma/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/Users/ksharma/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/ksharma/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/Users/ksharma/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/Users/ksharma/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/ksharma/.m2/repository/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/spring-jcl/5.1.3.RELEASE/spring-jcl-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/spring-test/5.1.3.RELEASE/spring-test-5.1.3.RELEASE.jar:/Users/ksharma/.m2/repository/org/xmlunit/xmlunit-core/2.6.2/xmlunit-core-2.6.2.jar:/Users/ksharma/.m2/repository/io/rest-assured/rest-assured-all/4.0.0/rest-assured-all-4.0.0.jar:/Users/ksharma/.m2/repository/org/codehaus/groovy/groovy/2.5.4/groovy-2.5.4.jar:/Users/ksharma/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/ksharma/.m2/repository/org/codehaus/groovy/groovy-xml/2.5.4/groovy-xml-2.5.4.jar:/Users/ksharma/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/ksharma/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-osgi-2.2.10.jar:/Users/ksharma/.m2/repository/org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar:/Users/ksharma/.m2/repository/org/codehaus/groovy/groovy-json/2.5.4/groovy-json-2.5.4.jar:/Users/ksharma/.m2/repository/io/cucumber/cucumber-spring/4.2.0/cucumber-spring-4.2.0.jar:/Users/ksharma/.m2/repository/io/cucumber/cucumber-java/2.3.1/cucumber-java-2.3.1.jar:/Users/ksharma/.m2/repository/io/cucumber/cucumber-core/2.3.1/cucumber-core-2.3.1.jar:/Users/ksharma/.m2/repository/info/cukes/cucumber-html/0.2.6/cucumber-html-0.2.6.jar:/Users/ksharma/.m2/repository/io/cucumber/cucumber-jvm-deps/1.0.6/cucumber-jvm-deps-1.0.6.jar:/Users/ksharma/.m2/repository/io/cucumber/gherkin/5.0.0/gherkin-5.0.0.jar:/Users/ksharma/.m2/repository/io/cucumber/tag-expressions/1.1.1/tag-expressions-1.1.1.jar:/Users/ksharma/.m2/repository/io/cucumber/cucumber-junit/2.3.1/cucumber-junit-2.3.1.jar:/Users/ksharma/.m2/repository/org/jacoco/org.jacoco.agent/0.8.3/org.jacoco.agent-0.8.3-runtime.jar:/Users/ksharma/.m2/repository/org/sonarsource/java/sonar-jacoco-listeners/5.10.2.17019/sonar-jacoco-listeners-5.10.2.17019.jar:/Users/ksharma/.m2/repository/org/springframework/security/spring-security-test/5.1.2.RELEASE/spring-security-test-5.1.2.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/security/spring-security-core/5.1.2.RELEASE/spring-security-core-5.1.2.RELEASE.jar:/Users/ksharma/.m2/repository/org/springframework/security/spring-security-web/5.1.2.RELEASE/spring-security-web-5.1.2.RELEASE.jar:/Users/ksharma/.m2/repository/io/rest-assured/rest-assured/4.1.2/rest-assured-4.1.2.jar:/Users/ksharma/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/Users/ksharma/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/Users/ksharma/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/ksharma/.m2/repository/org/apache/httpcomponents/httpmime/4.5.6/httpmime-4.5.6.jar:/Users/ksharma/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/ksharma/.m2/repository/io/rest-assured/json-path/3.1.1/json-path-3.1.1.jar:/Users/ksharma/.m2/repository/io/rest-assured/rest-assured-common/3.1.1/rest-assured-common-3.1.1.jar:/Users/ksharma/.m2/repository/io/rest-assured/xml-path/3.1.1/xml-path-3.1.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/ksharma"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="/Users/ksharma/Library/Java/JavaVirtualMachines/corretto-17.0.12/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/ksharma/Library/CloudStorage/OneDrive-GoToTechnologiesUSALLC/Documents/devops-master-class/jenkins/currency-exchange-microservice"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/Users/ksharma/Library/CloudStorage/OneDrive-GoToTechnologiesUSALLC/Documents/devops-master-class/jenkins/currency-exchange-microservice/target/surefire/surefirebooter10996965806652103594.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+7-LTS"/>
+    <property name="user.name" value="ksharma"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.4"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-17.0.12.7.1"/>
+    <property name="localRepository" value="/Users/ksharma/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-17/issues/"/>
+    <property name="java.io.tmpdir" value="/var/folders/b2/qdv479kx2gn6bn0vpp2yhvs40000gn/T/"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="/Users/ksharma/Library/CloudStorage/OneDrive-GoToTechnologiesUSALLC/Documents/devops-master-class/jenkins/currency-exchange-microservice"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/ksharma/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="17.0.12+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="contextLoads" classname="com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests" time="0.021">
+    <error message="Could not initialize class org.codehaus.groovy.reflection.ReflectionCache" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.reflection.ReflectionCache
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.vmplugin.v7.Java7 [in thread "main"]
+</error>
+    <system-out><![CDATA[22:50:13.275 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests]
+22:50:13.278 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+22:50:13.287 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+22:50:13.305 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+22:50:13.317 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests], using SpringBootContextLoader
+22:50:13.320 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests]: class path resource [com/in28minutes/microservices/currencyexchangeservice/CurrencyExchangeServiceApplicationTests-context.xml] does not exist
+22:50:13.320 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests]: class path resource [com/in28minutes/microservices/currencyexchangeservice/CurrencyExchangeServiceApplicationTestsContext.groovy] does not exist
+22:50:13.320 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+22:50:13.321 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests]: CurrencyExchangeServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:50:13.346 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests]
+22:50:13.393 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/ksharma/Library/CloudStorage/OneDrive-GoToTechnologiesUSALLC/Documents/devops-master-class/jenkins/currency-exchange-microservice/target/classes/com/in28minutes/microservices/currencyexchangeservice/CurrencyExchangeServiceApplicationH2.class]
+22:50:13.393 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationH2 for test class com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests
+22:50:13.439 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests]: using defaults.
+22:50:13.439 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+22:50:13.450 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4e25147a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b68cb27, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@675ffd1d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@56303475, org.springframework.test.context.support.DirtiesContextTestExecutionListener@30506c0d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1dcca8d3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5631962, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@52a70627, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@6124287a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@19569ebd, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4632cfc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6e1f8469, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2e380628, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3b6c624]
+22:50:13.451 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests]
+22:50:13.451 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests]
+22:50:13.451 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests]
+22:50:13.451 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests]
+22:50:13.452 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests]
+22:50:13.452 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests]
+22:50:13.454 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@3f92c349 testClass = CurrencyExchangeServiceApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@769a58e5 testClass = CurrencyExchangeServiceApplicationTests, locations = '{}', classes = '{class com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationH2}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@42e3ede4, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5b444398, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@37b70343, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@13e3c1c7], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+22:50:13.454 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests]
+22:50:13.454 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests]
+22:50:13.467 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.1.RELEASE)
+
+2025-01-15 22:50:13.596  INFO 29564 --- [           main] .CurrencyExchangeServiceApplicationTests : Starting CurrencyExchangeServiceApplicationTests on ksharma-MBP with PID 29564 (started by ksharma in /Users/ksharma/Library/CloudStorage/OneDrive-GoToTechnologiesUSALLC/Documents/devops-master-class/jenkins/currency-exchange-microservice)
+2025-01-15 22:50:13.597  INFO 29564 --- [           main] .CurrencyExchangeServiceApplicationTests : No active profile set, falling back to default profiles: default
+2025-01-15 22:50:13.879 ERROR 29564 --- [           main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.reflection.ReflectionCache
+	at org.codehaus.groovy.runtime.dgmimpl.NumberNumberMetaMethod.<clinit>(NumberNumberMetaMethod.java:33) ~[groovy-2.5.4.jar:2.5.4]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[na:na]
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128) ~[na:na]
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:347) ~[na:na]
+	at java.base/java.lang.Class.newInstance(Class.java:645) ~[na:na]
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.createMetaMethodFromClass(MetaClassRegistryImpl.java:257) ~[groovy-2.5.4.jar:2.5.4]
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:110) ~[groovy-2.5.4.jar:2.5.4]
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:85) ~[groovy-2.5.4.jar:2.5.4]
+	at groovy.lang.GroovySystem.<clinit>(GroovySystem.java:36) ~[groovy-2.5.4.jar:2.5.4]
+	at org.springframework.beans.factory.groovy.GroovyBeanDefinitionReader.<init>(GroovyBeanDefinitionReader.java:150) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.boot.BeanDefinitionLoader.<init>(BeanDefinitionLoader.java:84) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.createBeanDefinitionLoader(SpringApplication.java:766) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.load(SpringApplication.java:706) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:392) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.vmplugin.v7.Java7 [in thread "main"]
+	at org.codehaus.groovy.vmplugin.VMPluginFactory.<clinit>(VMPluginFactory.java:43) ~[groovy-2.5.4.jar:2.5.4]
+	at org.codehaus.groovy.reflection.GroovyClassValueFactory.<clinit>(GroovyClassValueFactory.java:35) ~[groovy-2.5.4.jar:2.5.4]
+	at org.codehaus.groovy.reflection.ClassInfo.<clinit>(ClassInfo.java:109) ~[groovy-2.5.4.jar:2.5.4]
+	at org.codehaus.groovy.reflection.ReflectionCache.getCachedClass(ReflectionCache.java:95) ~[groovy-2.5.4.jar:2.5.4]
+	at org.codehaus.groovy.reflection.ReflectionCache.<clinit>(ReflectionCache.java:39) ~[groovy-2.5.4.jar:2.5.4]
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.registerMethods(MetaClassRegistryImpl.java:209) ~[groovy-2.5.4.jar:2.5.4]
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:107) ~[groovy-2.5.4.jar:2.5.4]
+	... 38 common frames omitted
+
+2025-01-15 22:50:13.880 ERROR 29564 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@4e25147a] to prepare test instance [com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests@285a4fe3]
+
+java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.reflection.ReflectionCache
+	at org.codehaus.groovy.runtime.dgmimpl.NumberNumberMetaMethod.<clinit>(NumberNumberMetaMethod.java:33) ~[groovy-2.5.4.jar:2.5.4]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[na:na]
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128) ~[na:na]
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:347) ~[na:na]
+	at java.base/java.lang.Class.newInstance(Class.java:645) ~[na:na]
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.createMetaMethodFromClass(MetaClassRegistryImpl.java:257) ~[groovy-2.5.4.jar:2.5.4]
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:110) ~[groovy-2.5.4.jar:2.5.4]
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:85) ~[groovy-2.5.4.jar:2.5.4]
+	at groovy.lang.GroovySystem.<clinit>(GroovySystem.java:36) ~[groovy-2.5.4.jar:2.5.4]
+	at org.springframework.beans.factory.groovy.GroovyBeanDefinitionReader.<init>(GroovyBeanDefinitionReader.java:150) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.boot.BeanDefinitionLoader.<init>(BeanDefinitionLoader.java:84) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.createBeanDefinitionLoader(SpringApplication.java:766) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.load(SpringApplication.java:706) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:392) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.vmplugin.v7.Java7 [in thread "main"]
+	at org.codehaus.groovy.vmplugin.VMPluginFactory.<clinit>(VMPluginFactory.java:43) ~[groovy-2.5.4.jar:2.5.4]
+	at org.codehaus.groovy.reflection.GroovyClassValueFactory.<clinit>(GroovyClassValueFactory.java:35) ~[groovy-2.5.4.jar:2.5.4]
+	at org.codehaus.groovy.reflection.ClassInfo.<clinit>(ClassInfo.java:109) ~[groovy-2.5.4.jar:2.5.4]
+	at org.codehaus.groovy.reflection.ReflectionCache.getCachedClass(ReflectionCache.java:95) ~[groovy-2.5.4.jar:2.5.4]
+	at org.codehaus.groovy.reflection.ReflectionCache.<clinit>(ReflectionCache.java:39) ~[groovy-2.5.4.jar:2.5.4]
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.registerMethods(MetaClassRegistryImpl.java:209) ~[groovy-2.5.4.jar:2.5.4]
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:107) ~[groovy-2.5.4.jar:2.5.4]
+	... 38 common frames omitted
+
+]]></system-out>
+    <system-err><![CDATA[java.lang.instrument.IllegalClassFormatException: Error while instrumenting java/sql/SQLException.
+	at org.jacoco.agent.rt.internal_1f1cc91.CoverageTransformer.transform(CoverageTransformer.java:93)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:541)
+	at java.base/java.lang.ClassLoader.defineClass2(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1108)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:182)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:821)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassInModuleOrNull(BuiltinClassLoader.java:741)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:665)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:700)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:669)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.<clinit>(SpringJUnit4ClassRunner.java:107)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:33)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:362)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.io.IOException: Error while instrumenting java/sql/SQLException.
+	at org.jacoco.agent.rt.internal_1f1cc91.core.instr.Instrumenter.instrumentError(Instrumenter.java:170)
+	at org.jacoco.agent.rt.internal_1f1cc91.core.instr.Instrumenter.instrument(Instrumenter.java:120)
+	at org.jacoco.agent.rt.internal_1f1cc91.CoverageTransformer.transform(CoverageTransformer.java:91)
+	... 34 more
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 61
+	at org.jacoco.agent.rt.internal_1f1cc91.asm.ClassReader.<init>(ClassReader.java:184)
+	at org.jacoco.agent.rt.internal_1f1cc91.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.jacoco.agent.rt.internal_1f1cc91.asm.ClassReader.<init>(ClassReader.java:152)
+	at org.jacoco.agent.rt.internal_1f1cc91.core.internal.instr.InstrSupport.classReaderFor(InstrSupport.java:247)
+	at org.jacoco.agent.rt.internal_1f1cc91.core.instr.Instrumenter.instrument(Instrumenter.java:86)
+	at org.jacoco.agent.rt.internal_1f1cc91.core.instr.Instrumenter.instrument(Instrumenter.java:118)
+	... 35 more
+java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.vmplugin.v7.Java7
+	at org.codehaus.groovy.vmplugin.VMPluginFactory.<clinit>(VMPluginFactory.java:43)
+	at org.codehaus.groovy.reflection.GroovyClassValueFactory.<clinit>(GroovyClassValueFactory.java:35)
+	at org.codehaus.groovy.reflection.ClassInfo.<clinit>(ClassInfo.java:109)
+	at org.codehaus.groovy.reflection.ReflectionCache.getCachedClass(ReflectionCache.java:95)
+	at org.codehaus.groovy.reflection.ReflectionCache.<clinit>(ReflectionCache.java:39)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.registerMethods(MetaClassRegistryImpl.java:209)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:107)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:85)
+	at groovy.lang.GroovySystem.<clinit>(GroovySystem.java:36)
+	at org.springframework.beans.factory.groovy.GroovyBeanDefinitionReader.<init>(GroovyBeanDefinitionReader.java:150)
+	at org.springframework.boot.BeanDefinitionLoader.<init>(BeanDefinitionLoader.java:84)
+	at org.springframework.boot.SpringApplication.createBeanDefinitionLoader(SpringApplication.java:766)
+	at org.springframework.boot.SpringApplication.load(SpringApplication.java:706)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:392)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.ExceptionInInitializerError: Exception org.codehaus.groovy.GroovyBugError [in thread "main"]
+	at org.codehaus.groovy.vmplugin.v7.Java7.<clinit>(Java7.java:45)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:347)
+	at java.base/java.lang.Class.newInstance(Class.java:645)
+	at org.codehaus.groovy.vmplugin.VMPluginFactory.createPlugin(VMPluginFactory.java:57)
+	at org.codehaus.groovy.vmplugin.VMPluginFactory.<clinit>(VMPluginFactory.java:39)
+	... 44 more
+java.lang.instrument.IllegalClassFormatException: Error while instrumenting java/sql/Timestamp.
+	at org.jacoco.agent.rt.internal_1f1cc91.CoverageTransformer.transform(CoverageTransformer.java:93)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:541)
+	at java.base/java.lang.ClassLoader.defineClass2(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1108)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:182)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:821)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassInModuleOrNull(BuiltinClassLoader.java:741)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:665)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:700)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:669)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at com.fasterxml.jackson.databind.ser.std.StdJdkSerializers.all(StdJdkSerializers.java:55)
+	at com.fasterxml.jackson.databind.ser.BasicSerializerFactory.<clinit>(BasicSerializerFactory.java:93)
+	at com.fasterxml.jackson.databind.ObjectMapper.<init>(ObjectMapper.java:581)
+	at com.fasterxml.jackson.databind.ObjectMapper.<init>(ObjectMapper.java:480)
+	at org.springframework.http.converter.json.Jackson2ObjectMapperBuilder.build(Jackson2ObjectMapperBuilder.java:621)
+	at org.springframework.http.converter.json.MappingJackson2HttpMessageConverter.<init>(MappingJackson2HttpMessageConverter.java:59)
+	at org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter.<init>(AllEncompassingFormHttpMessageConverter.java:76)
+	at org.springframework.boot.autoconfigure.BackgroundPreinitializer$MessageConverterInitializer.run(BackgroundPreinitializer.java:131)
+	at org.springframework.boot.autoconfigure.BackgroundPreinitializer$1.runSafely(BackgroundPreinitializer.java:106)
+	at org.springframework.boot.autoconfigure.BackgroundPreinitializer$1.run(BackgroundPreinitializer.java:97)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: Error while instrumenting java/sql/Timestamp.
+	at org.jacoco.agent.rt.internal_1f1cc91.core.instr.Instrumenter.instrumentError(Instrumenter.java:170)
+	at org.jacoco.agent.rt.internal_1f1cc91.core.instr.Instrumenter.instrument(Instrumenter.java:120)
+	at org.jacoco.agent.rt.internal_1f1cc91.CoverageTransformer.transform(CoverageTransformer.java:91)
+	... 25 more
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 61
+	at org.jacoco.agent.rt.internal_1f1cc91.asm.ClassReader.<init>(ClassReader.java:184)
+	at org.jacoco.agent.rt.internal_1f1cc91.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.jacoco.agent.rt.internal_1f1cc91.asm.ClassReader.<init>(ClassReader.java:152)
+	at org.jacoco.agent.rt.internal_1f1cc91.core.internal.instr.InstrSupport.classReaderFor(InstrSupport.java:247)
+	at org.jacoco.agent.rt.internal_1f1cc91.core.instr.Instrumenter.instrument(Instrumenter.java:86)
+	at org.jacoco.agent.rt.internal_1f1cc91.core.instr.Instrumenter.instrument(Instrumenter.java:118)
+	... 26 more
+java.lang.instrument.IllegalClassFormatException: Error while instrumenting java/sql/Date.
+	at org.jacoco.agent.rt.internal_1f1cc91.CoverageTransformer.transform(CoverageTransformer.java:93)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:541)
+	at java.base/java.lang.ClassLoader.defineClass2(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1108)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:182)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:821)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassInModuleOrNull(BuiltinClassLoader.java:741)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:665)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:700)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:669)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at com.fasterxml.jackson.databind.ser.std.StdJdkSerializers.all(StdJdkSerializers.java:58)
+	at com.fasterxml.jackson.databind.ser.BasicSerializerFactory.<clinit>(BasicSerializerFactory.java:93)
+	at com.fasterxml.jackson.databind.ObjectMapper.<init>(ObjectMapper.java:581)
+	at com.fasterxml.jackson.databind.ObjectMapper.<init>(ObjectMapper.java:480)
+	at org.springframework.http.converter.json.Jackson2ObjectMapperBuilder.build(Jackson2ObjectMapperBuilder.java:621)
+	at org.springframework.http.converter.json.MappingJackson2HttpMessageConverter.<init>(MappingJackson2HttpMessageConverter.java:59)
+	at org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter.<init>(AllEncompassingFormHttpMessageConverter.java:76)
+	at org.springframework.boot.autoconfigure.BackgroundPreinitializer$MessageConverterInitializer.run(BackgroundPreinitializer.java:131)
+	at org.springframework.boot.autoconfigure.BackgroundPreinitializer$1.runSafely(BackgroundPreinitializer.java:106)
+	at org.springframework.boot.autoconfigure.BackgroundPreinitializer$1.run(BackgroundPreinitializer.java:97)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: Error while instrumenting java/sql/Date.
+	at org.jacoco.agent.rt.internal_1f1cc91.core.instr.Instrumenter.instrumentError(Instrumenter.java:170)
+	at org.jacoco.agent.rt.internal_1f1cc91.core.instr.Instrumenter.instrument(Instrumenter.java:120)
+	at org.jacoco.agent.rt.internal_1f1cc91.CoverageTransformer.transform(CoverageTransformer.java:91)
+	... 25 more
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 61
+	at org.jacoco.agent.rt.internal_1f1cc91.asm.ClassReader.<init>(ClassReader.java:184)
+	at org.jacoco.agent.rt.internal_1f1cc91.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.jacoco.agent.rt.internal_1f1cc91.asm.ClassReader.<init>(ClassReader.java:152)
+	at org.jacoco.agent.rt.internal_1f1cc91.core.internal.instr.InstrSupport.classReaderFor(InstrSupport.java:247)
+	at org.jacoco.agent.rt.internal_1f1cc91.core.instr.Instrumenter.instrument(Instrumenter.java:86)
+	at org.jacoco.agent.rt.internal_1f1cc91.core.instr.Instrumenter.instrument(Instrumenter.java:118)
+	... 26 more
+java.lang.instrument.IllegalClassFormatException: Error while instrumenting java/sql/Time.
+	at org.jacoco.agent.rt.internal_1f1cc91.CoverageTransformer.transform(CoverageTransformer.java:93)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:541)
+	at java.base/java.lang.ClassLoader.defineClass2(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1108)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:182)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:821)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassInModuleOrNull(BuiltinClassLoader.java:741)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:665)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:700)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:669)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at com.fasterxml.jackson.databind.ser.std.StdJdkSerializers.all(StdJdkSerializers.java:59)
+	at com.fasterxml.jackson.databind.ser.BasicSerializerFactory.<clinit>(BasicSerializerFactory.java:93)
+	at com.fasterxml.jackson.databind.ObjectMapper.<init>(ObjectMapper.java:581)
+	at com.fasterxml.jackson.databind.ObjectMapper.<init>(ObjectMapper.java:480)
+	at org.springframework.http.converter.json.Jackson2ObjectMapperBuilder.build(Jackson2ObjectMapperBuilder.java:621)
+	at org.springframework.http.converter.json.MappingJackson2HttpMessageConverter.<init>(MappingJackson2HttpMessageConverter.java:59)
+	at org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter.<init>(AllEncompassingFormHttpMessageConverter.java:76)
+	at org.springframework.boot.autoconfigure.BackgroundPreinitializer$MessageConverterInitializer.run(BackgroundPreinitializer.java:131)
+	at org.springframework.boot.autoconfigure.BackgroundPreinitializer$1.runSafely(BackgroundPreinitializer.java:106)
+	at org.springframework.boot.autoconfigure.BackgroundPreinitializer$1.run(BackgroundPreinitializer.java:97)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: Error while instrumenting java/sql/Time.
+	at org.jacoco.agent.rt.internal_1f1cc91.core.instr.Instrumenter.instrumentError(Instrumenter.java:170)
+	at org.jacoco.agent.rt.internal_1f1cc91.core.instr.Instrumenter.instrument(Instrumenter.java:120)
+	at org.jacoco.agent.rt.internal_1f1cc91.CoverageTransformer.transform(CoverageTransformer.java:91)
+	... 25 more
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 61
+	at org.jacoco.agent.rt.internal_1f1cc91.asm.ClassReader.<init>(ClassReader.java:184)
+	at org.jacoco.agent.rt.internal_1f1cc91.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.jacoco.agent.rt.internal_1f1cc91.asm.ClassReader.<init>(ClassReader.java:152)
+	at org.jacoco.agent.rt.internal_1f1cc91.core.internal.instr.InstrSupport.classReaderFor(InstrSupport.java:247)
+	at org.jacoco.agent.rt.internal_1f1cc91.core.instr.Instrumenter.instrument(Instrumenter.java:86)
+	at org.jacoco.agent.rt.internal_1f1cc91.core.instr.Instrumenter.instrument(Instrumenter.java:118)
+	... 26 more
+]]></system-err>
+  </testcase>
+</testsuite>

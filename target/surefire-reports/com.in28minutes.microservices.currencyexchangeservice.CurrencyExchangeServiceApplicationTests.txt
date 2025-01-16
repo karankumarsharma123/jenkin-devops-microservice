@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.741 s <<< FAILURE! - in com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests
+contextLoads(com.in28minutes.microservices.currencyexchangeservice.CurrencyExchangeServiceApplicationTests)  Time elapsed: 0.021 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.reflection.ReflectionCache
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.vmplugin.v7.Java7 [in thread "main"]
+
