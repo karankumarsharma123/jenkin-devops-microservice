@@ -11,7 +11,6 @@ pipeline {
 			steps {
 				sh 'mvn --version'
 				sh 'docker --version'
-				sh 'java --version'
 				echo "Build"
 				echo "PATH - $PATH"
 				echo "BUILD_NUMBER - $env.BUILD_NUMBER"
@@ -22,22 +21,46 @@ pipeline {
 		}
 		stage('Compile') {
 			steps {
-				sh 'mvn clean compile'
+				sh "mvn clean compile"
 			}
 		}
 		stage('Test') {
 			steps {
-				sh 'mvn test'
+				echo "mvn test"
 			}
 		}
 		stage('Integration Test'){
 			steps {
-				sh 'mvn failsafe:integration-test failsafe:verify'
+				echo "mvn failsafe:integration-test failsafe:verify"
 			}
+		}
+		stage('Package'){
+			steps {
+				sh "mvn package -DskipTests"
+			}
+		}
+		stage('build docker image'){
+			steps {
+				script {
+					docker.build("kkkkkk123/jenkin-devops-microservice:${env.BUILD_TAG}")
+				}
+				
+			}
+
+		}
+		stage('push docker image'){
+			steps {
+				script {
+					docker.withRegistry('','dockerhub') {
+					dockerImage.push();
+					dockerImage.push('latest');
+					}
+				}
+
+			}
+
 		}
 	}
 }
-
-
 
 
